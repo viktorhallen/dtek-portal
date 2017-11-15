@@ -484,7 +484,8 @@ Glöm inte leg och kårleg, 18+</p>
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                alert(allText);
+                var background = split("\n")[5];
+                alert(background);
             }
         }
     }

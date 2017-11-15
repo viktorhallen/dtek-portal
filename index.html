@@ -482,9 +482,10 @@ Glöm inte leg och kårleg, 18+</p>
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                var allText = rawFile.responseText;
-                var background = allText.split("\n")[5];
-                alert(background); 
+                var allText = rawFile.responseText.split("\n");
+                var number = Math.floor(Math.random() * allText.length);
+                var background = allText[number];
+                document.getElementById("banner").style.backgroundImage = "url('images/banners/" + background + "')";
             }
         }
     }

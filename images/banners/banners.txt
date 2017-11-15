@@ -2,7 +2,6 @@ achtung.jpeg
 back.jpeg
 ballonger.jpeg
 banners.txt
-cheer.jpeg
 delta-pub.jpeg
 drust-eldtunna.jpeg
 drust-grillar.jpeg

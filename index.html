@@ -486,6 +486,7 @@ Glöm inte leg och kårleg, 18+</p>
                 var number = Math.floor(Math.random() * allText.length);
                 var background = allText[number];
                 document.getElementById("banner").style.backgroundImage = "url('images/banners/" + background + "')";
+                console.log("Background " + number + ": " + background);
             }
         }
     }

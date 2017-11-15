@@ -36,6 +36,7 @@
     <style type="text/css">
       [role="banner"] {
         background-image: url( beer.jpeg );
+        background: #666;
       }
     </style>
   </head>
@@ -53,7 +54,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-    <header role="banner">
+    <header role="banner" id="banner">
       <div class="top-bar">
         <div class="inner-bar" id="site-menu">
           <div class="wrapper group">
@@ -471,6 +472,24 @@ Glöm inte leg och kårleg, 18+</p>
       </div>
     </div>
     <script src="assets/application-388d36f13e5c9f9c542119eb3ced01ea50e9374dfb9ee5a30ebf2160afd56f71.js"></script>
+    <script>
+      /*Set header to something random */
+
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", "images/banners/banners.txt", false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+  </script>
   </body>
 </html>
 

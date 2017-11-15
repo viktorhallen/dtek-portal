@@ -1,7 +1,6 @@
 achtung.jpeg
 back.jpeg
 ballonger.jpeg
-banners.txt
 delta-pub.jpeg
 drust-eldtunna.jpeg
 drust-grillar.jpeg

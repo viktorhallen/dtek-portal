@@ -8649,6 +8649,7 @@ h3 .banner-head {
         display: none
     }
     [role="banner"] .header-controls {
+        height: 4em;
         text-align: left;
         background-color: transparent !important;
         padding: 0.75em 0

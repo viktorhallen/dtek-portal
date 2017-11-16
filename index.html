@@ -38,6 +38,7 @@
         background: #666;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body class="home home-index">
@@ -493,13 +494,14 @@ Glöm inte leg och kårleg, 18+</p>
                 var allText = rawFile.responseText.split("\n");
                 var number = Math.floor(Math.random() * allText.length);
                 var background = allText[number];
-                document.getElementById("banner").style.backgroundImage = "url('images/banners/" + background + "')";
+                $('#banner').css('background-image', "url('images/banners/" + background + "')");
+                $('#header').fadeIn(1000);
                 console.log("Background " + number + ": " + background);
             }
         }
     }
     rawFile.send(null);
-    setTimeout(setBanner, 10000);
+    setTimeout(function(){ $('#header').fadeOut(1000, setBanner);}, 10000);
   }
   setBanner();
   </script>

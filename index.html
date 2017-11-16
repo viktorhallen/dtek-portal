@@ -481,7 +481,7 @@ Glöm inte leg och kårleg, 18+</p>
     <script src="assets/application-388d36f13e5c9f9c542119eb3ced01ea50e9374dfb9ee5a30ebf2160afd56f71.js"></script>
     <script>
       /*Set header to something random */
-
+  function setBanner() {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", "images/banners/banners.txt", false);
     rawFile.onreadystatechange = function ()
@@ -499,6 +499,9 @@ Glöm inte leg och kårleg, 18+</p>
         }
     }
     rawFile.send(null);
+    setTimeout(setBanner, 5000);
+  }
+  setBanner();
   </script>
   <style type="text/css">
   #banner {

@@ -495,13 +495,13 @@ Glöm inte leg och kårleg, 18+</p>
                 var number = Math.floor(Math.random() * allText.length);
                 var background = allText[number];
                 $('#banner').css('background-image', "url('images/banners/" + background + "')");
-                $('#header').fadeIn(1000);
+                $('#banner').fadeIn(1000);
                 console.log("Background " + number + ": " + background);
             }
         }
     }
     rawFile.send(null);
-    setTimeout(function(){ $('#header').fadeOut(1000, setBanner);}, 10000);
+    setTimeout(function(){ $('#banner').fadeOut(1000, setBanner);}, 10000);
   }
   setBanner();
   </script>

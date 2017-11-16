@@ -7715,7 +7715,7 @@ i.loading-indicator-feature {
 .home .quick-buttons .box,
 .home .user-area .box {
     height: 10em;
-    overflow: hidden
+    overflow: hidden;
     margin-top: -1em;
     margin-bottom: 1em;
 }

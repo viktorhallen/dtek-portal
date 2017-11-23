@@ -1,3 +1,29 @@
+
+          __________________________________  __.                   
+          \______ \__    ___/\_   _____/    |/ _|      ______ ____  
+           |    |  \|    |    |    __)_|      <       /  ___// __ \ 
+           |    `   \    |    |        \    |  \      \___ \\  ___/ 
+          /_______  /____|   /_______  /____|__ \ /\ /____  >\___  >
+                  \/                 \/        \/ \/      \/     \/ 
+
+is a minimalistic portal for CSE students at Chalmers. 
+
+The portal is heavily based on the older and more robust project of chalmers.it, 
+the IT students' equivalent, from which the frontend was forked in November 2017.
+
+Much UI cred to them!
+
+CSE rebuilding by:
+
+  Viktor Hallén (d14)
+  contact: viktor.hallen@gmail.com
+
+Most of the photos (C) DFoto.se
+except:
+ - Macbook Coding Coffeecup: https://www.pexels.com/photo/code-coder-coding-coffee-34649/
+
+______________________________________________________________________________________
+
        _____  _             _                                 _  _
       / ____|| |           | |                               (_)| |
      | |     | |__    __ _ | | _ __ ___    ___  _ __  ___     _ | |_

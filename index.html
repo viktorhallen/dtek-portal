@@ -3,199 +3,211 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8" />
-
     <!-- iOS Homescreen specials -->
-  	<meta name="apple-mobile-web-app-title" content="DTEK-portalen">
-  	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="DTEK-portalen">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-
-
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon-precomposed" href="favicon-apple.png">
-
-  	<!-- Viewport setting -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-
+    <!-- Viewport setting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Datateknologsektionen på Chalmers</title>
-
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic" rel="stylesheet" type="text/css">
     <script src="assets/i18n-fd7dbcb70da400e8d5cc9dd31472a0acfde8448552c2bc7aaef9c951654426ea.js" async></script>
     <script src="javascripts/translations.js"  async></script>
     <script>
-//<![CDATA[
-
-      I18n.defaultLocale = "sv";
-      I18n.locale = "sv";
-
-//]]>
-</script>    
+      //<![CDATA[
+      
+            I18n.defaultLocale = "sv";
+            I18n.locale = "sv";
+      
+      //]]>
+    </script>    
     <link rel="stylesheet" media="screen" href="assets/application-e5fdf175421bd982cd8b3817f2bc93d589c6632296666e2bd520032754a15875.css" />
     <script src="assets/vendor/modernizr-4acdf69dfb61855f7bf52c0e8df714b19a8d07185726649e16d0669659008db5.js" async></script>
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="uazsihfxLLeM8/1bi0LQAfbPdVzrzqEai06bcBoX+N7n7eLJZdn3NSF8o+lwotbMVzvA4R+TF4U7wwlD+UGnbA==" />
     <style type="text/css">
       [role="banner"] {
-        background: #666;
+      background: #666;
       }
     </style>
   </head>
-
   <body class="home home-index">
-
-<!-- Facebook code -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.11';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
+    <!-- Facebook code -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header role="banner" id="banner">
       <div class="top-bar">
         <div class="inner-bar" id="site-menu">
           <div class="wrapper group">
-              <h1>
-                <a class="logo" href="index.html">
-                    <span class="logo-text">Datateknologsektionen<br />
-                    <small>Chalmers Studentkår</small></span>
-</a>              </h1>
+            <h1>
+              <a class="logo" href="index.html">
+              <span class="logo-text">Datateknologsektionen<br />
+              <small>Chalmers Studentkår</small></span>
+              </a>              
+            </h1>
             <nav role="navigation" class="main-nav">
               <ul id="menu-huvudnavigation">
-                  <li class="menu-item"><a href="https://dtek.se/wiki/">Wikin</a></li>
-                  <li class="menu-item"><a href="https://dns.dtek.se/">DNS</a></li>
-                  <li class="menu-item"><a href="https://dnollk.se/">DNollK</a></li>
-                  <li class="menu-item"><a href="https://dfoto.se/">DFoto</a></li>
-                  <li class="menu-item"><a href="https://datateknologer.se/">DAG</a></li>
-                  <li class="menu-item"><a href="https://datateknologer.se/foretag/event-och-tjanster/">Företag</a></li>
+                <li class="menu-item"><a href="https://dtek.se/wiki/">Wikin</a></li>
+                <li class="menu-item"><a href="https://dns.dtek.se/">DNS</a></li>
+                <li class="menu-item"><a href="https://dnollk.se/">DNollK</a></li>
+                <li class="menu-item"><a href="https://dfoto.se/">DFoto</a></li>
+                <li class="menu-item"><a href="https://datateknologer.se/">DAG</a></li>
+                <li class="menu-item"><a href="https://datateknologer.se/foretag/event-och-tjanster/">Företag</a></li>
               </ul>
             </nav>
           </div>
         </div>
-
         <div class="header-toolbar wrapper">
           <a id="main-nav-toggle">≡</a>
           <ul class="header-controls horizontal-list icon-align">
-              <!--<li><a class="button tiny" id="login-btn" href="auth/account.html">Logga in</a></li> -->
+            <!--<li><a class="button tiny" id="login-btn" href="auth/account.html">Logga in</a></li> -->
             <!--<li id="header-search">
               <form action="https://chalmers.it/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
                 <input type="search" name="search" id="search" placeholder="Sök nyheter" />
                 <i class="fa fa-search"></i>
-</form>            </li> -->
+              </form>            </li> -->
             <!--<li class="flags dropdown">
               <span class="dropdown-trigger"><img src="assets/flags/sv-1493318fafef1315b239423418273b61df3a7c486e41d754bb16998c13cc0675.svg" alt="Sv" /> <i class="fa fa-caret-down"></i></span>
               <ul class="dropdown-sub">
                     <li><a href="en.html"><img src="assets/flags/en-e48f163383192cc1d8674f6bb14b3621e2abfe7b1ab64074e340c880cfc2ac30.svg" alt="En" /></a></li>-->
-              </ul>
-            </li>
+          </ul>
+          </li>
           </ul>
         </div>
       </div>
     </header>
     <section role="main" class="wrapper">
-      
-
-<header class="row">
-  <div class="front-title large-4 columns">
-    <div class="box">
-      <h1>
-          <span class="detail">Teknologsektionen</span><br>
-        Datateknik<br>
-        <span class="detail">Chalmers Studentkår</span>
-      </h1>
-    </div>
-  </div>
-  <div class="quick-buttons large-5 columns">
-    <ul class="box list text-center">
-        <li><a data-tooltip data-options="disable_for_touch:true" title="DTEK-wikin, där allt kul händer!" href="https://dtek.se/wiki/" target="_blank" class="has-tip tip-top"> <i class="fa fa-book"></i> Wikin</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Datas forum, med varierande mängd av inlägg" href="https://forum.dtek.se/" target="_blank" class="has-tip tip-top"> <i class="fa fa-comments"></i> Forum</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Schysst subreddit med stor potential" href="https://www.reddit.com/r/dtek/" target="_blank" class="has-tip tip-top"> <i class="fa fa-reddit"></i> Reddit</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Datas alldeles egen podcast" href="https://dbrus.dtek.se/" target="_blank" class="has-tip tip-top"> <i class="fa fa-podcast"></i> Dbrus</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Mer info om Databussen" href="https://demeter.dtek.se/wiki/Main/Databussen" target="_blank" class="has-tip tip-top"> <i class="fa fa-car"></i> Databussen</a></li>
-        
-        <li><a data-tooltip data-options="disable_for_touch:true" title="TimeEdit" href="https://se.timeedit.net/web/chalmers/db1/public/ri1Q7.html" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div><i class="fa fa-table"></i> Schema</a></li>
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Boka grupprum på Chalmers" href="https://se.timeedit.net/web/chalmers/db1/b1/" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div> <i class="fa fa-users"></i> Grupprum</a></li>
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Genväg för att ladda ditt kårkort" href="http://kårkort.se" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div> <i class="fa fa-credit-card"></i> Kårkort</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Cremona bokhandel, numera kallat Store" href="http://www.cremona.se/" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div> <i class="fa fa-shopping-cart"></i> Cremona</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="PingPong" href="https://pingpong.chalmers.se" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div> <i class="fa fa-floppy-o"></i> PingPong</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Karta över Campus" href="https://maps.chalmers.se/" target="_blank" class="has-tip tip-top"><div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div> <i class="fa fa-map"></i> Karta</a></li>
-
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Anmäl dig till Datas veckobrev, med alla arrangemang och annat som händer på sektionen" href="https://lists.dtek.se/cgi-bin/mailman/listinfo/veckobrev" target="_blank" class="has-tip tip-top"> <i class="fa fa-feed"></i> Veckobrev</a></li>
-        <!--<li><a data-tooltip data-options="disable_for_touch:true" title="Skriv ut på Chalmers skrivare" href="print.html" class="has-tip tip-top"><i class="fa fa-print"></i> Skriv ut</a></li>
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Boka Hubben eller grupprummet" href="https://bookit.chalmers.it/bookings/new" target="_blank" class="has-tip tip-top"><i class="fa fa-home"></i> bookIT</a></li>
-        <li><a data-tooltip data-options="disable_for_touch:true" title="Gå med i IT-sektionens chatt" href="https://slack.chalmers.it/signup" target="_blank" class="has-tip tip-top"><i class="fa fa-slack"></i> Slack</a></li> -->
-    </ul>
-  </div>
-  <!--<div class="user-area large-3 columns">
-    <section class="current-event box">
-  <h2>Kommande evenemang</h2>
-  <div>
-      <p>Det finns inga evenemang idag</p>
-  </div>
-</section>
-
-  </div> -->
-</header>
-
-<section class="dashboard row">
-
-<div class="large-6 columns">
-  <div class="box">
-       <header>
-        <h2>Sektionen på Facebook</h2>
+      <header class="row">
+        <div class="front-title large-4 columns">
+          <div class="box">
+            <h1>
+              <span class="detail">Teknologsektionen</span><br>
+              Datateknik<br>
+              <span class="detail">Chalmers Studentkår</span>
+            </h1>
+          </div>
+        </div>
+        <div class="quick-buttons large-5 columns">
+          <ul class="box list text-center">
+            <li><a data-tooltip data-options="disable_for_touch:true" title="DTEK-wikin, där allt kul händer!" href="https://dtek.se/wiki/" target="_blank" class="has-tip tip-top"> <i class="fa fa-book"></i> Wikin</a></li>
+            <li><a data-tooltip data-options="disable_for_touch:true" title="Datas forum, med varierande mängd av inlägg" href="https://forum.dtek.se/" target="_blank" class="has-tip tip-top"> <i class="fa fa-comments"></i> Forum</a></li>
+            <li><a data-tooltip data-options="disable_for_touch:true" title="Schysst subreddit med stor potential" href="https://www.reddit.com/r/dtek/" target="_blank" class="has-tip tip-top"> <i class="fa fa-reddit"></i> Reddit</a></li>
+            <li><a data-tooltip data-options="disable_for_touch:true" title="Datas alldeles egen podcast" href="https://dbrus.dtek.se/" target="_blank" class="has-tip tip-top"> <i class="fa fa-podcast"></i> Dbrus</a></li>
+            <li><a data-tooltip data-options="disable_for_touch:true" title="Mer info om Databussen" href="https://demeter.dtek.se/wiki/Main/Databussen" target="_blank" class="has-tip tip-top"> <i class="fa fa-car"></i> Databussen</a></li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="TimeEdit" href="https://se.timeedit.net/web/chalmers/db1/public/ri1Q7.html" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-table"></i> Schema
+              </a>
+            </li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="Boka grupprum på Chalmers" href="https://se.timeedit.net/web/chalmers/db1/b1/" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-users"></i> Grupprum
+              </a>
+            </li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="Genväg för att ladda ditt kårkort" href="http://kårkort.se" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-credit-card"></i> Kårkort
+              </a>
+            </li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="Cremona bokhandel, numera kallat Store" href="http://www.cremona.se/" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-shopping-cart"></i> Cremona
+              </a>
+            </li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="PingPong" href="https://pingpong.chalmers.se" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-floppy-o"></i> PingPong
+              </a>
+            </li>
+            <li>
+              <a data-tooltip data-options="disable_for_touch:true" title="Karta över Campus" href="https://maps.chalmers.se/" target="_blank" class="has-tip tip-top">
+                <div class="quick-button-chalmers"><i class="fa fa-graduation-cap"></i></div>
+                <i class="fa fa-map"></i> Karta
+              </a>
+            </li>
+            <li><a data-tooltip data-options="disable_for_touch:true" title="Anmäl dig till Datas veckobrev, med alla arrangemang och annat som händer på sektionen" href="https://lists.dtek.se/cgi-bin/mailman/listinfo/veckobrev" target="_blank" class="has-tip tip-top"> <i class="fa fa-feed"></i> Veckobrev</a></li>
+            <!--<li><a data-tooltip data-options="disable_for_touch:true" title="Skriv ut på Chalmers skrivare" href="print.html" class="has-tip tip-top"><i class="fa fa-print"></i> Skriv ut</a></li>
+              <li><a data-tooltip data-options="disable_for_touch:true" title="Boka Hubben eller grupprummet" href="https://bookit.chalmers.it/bookings/new" target="_blank" class="has-tip tip-top"><i class="fa fa-home"></i> bookIT</a></li>
+              <li><a data-tooltip data-options="disable_for_touch:true" title="Gå med i IT-sektionens chatt" href="https://slack.chalmers.it/signup" target="_blank" class="has-tip tip-top"><i class="fa fa-slack"></i> Slack</a></li> -->
+          </ul>
+        </div>
+        <!--<div class="user-area large-3 columns">
+          <section class="current-event box">
+          <h2>Kommande evenemang</h2>
+          <div>
+            <p>Det finns inga evenemang idag</p>
+          </div>
+          </section>
+          
+          </div> -->
       </header>
-     <div class="fb-page" data-href="https://www.facebook.com/dtekchalmers/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/dtekchalmers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dtekchalmers/">Datateknologsektionen</a></blockquote></div>
-    </div>
-  </div>
-
-<div class="large-5 columns">
-  <div class="box">
-       <header>
-        <h2>Välkommen</h2>
-      </header>
-     Detta är DTEK-portalen, med ett gäng nyttiga länkar till ställen där du kan tänkas vilja gå.
-     <br/><br/>
-     <p class="vspace">Datateknologsektionen är en icke vinstdrivande organisation som är till för alla studenter på civilingenjörsprogrammet Datateknik på Chalmers och dess relaterade <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Masterprogram">masterprogram</a>. Vi ordnar <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Mottagning">mottagning</a> för nyantagna, arrangerar <a class="categorylink" href="https://demeter.dtek.se/wiki/Kategorier/Fester">fester</a>, bedriver <a class="wikilink" href="https://dns.dtek.se/">studiebevakning</a> och <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Index">mycket mer</a>. 
-</p>
-    </div>
-  </div>
-</section>
+      <section class="dashboard row">
+        <div class="large-6 columns">
+          <div class="box">
+            <header>
+              <h2>Sektionen på Facebook</h2>
+            </header>
+            <div class="fb-page" data-href="https://www.facebook.com/dtekchalmers/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/dtekchalmers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dtekchalmers/">Datateknologsektionen</a></blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="large-5 columns">
+          <div class="box">
+            <header>
+              <h2>Välkommen</h2>
+            </header>
+            Detta är DTEK-portalen, med ett gäng nyttiga länkar till ställen där du kan tänkas vilja gå.
+            <br/><br/>
+            <p class="vspace">Datateknologsektionen är en icke vinstdrivande organisation som är till för alla studenter på civilingenjörsprogrammet Datateknik på Chalmers och dess relaterade <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Masterprogram">masterprogram</a>. Vi ordnar <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Mottagning">mottagning</a> för nyantagna, arrangerar <a class="categorylink" href="https://demeter.dtek.se/wiki/Kategorier/Fester">fester</a>, bedriver <a class="wikilink" href="https://dns.dtek.se/">studiebevakning</a> och <a class="wikilink" href="https://demeter.dtek.se/wiki/Main/Index">mycket mer</a>. </p>
+          </div>
+        </div>
       </section>
+    </section>
     <footer role="contentinfo" itemscope itemtype="http://schema.org/EducationalOrganization">
       <div class="wrapper group">
         <section class="large-4 columns">
           <a class="block footer-home-link" href="index.html">
             <hgroup itemprop="description">
               <h1>
-                  Datateknologsektionen
+                Datateknologsektionen
               </h1>
               <h2>
-                  Chalmers Tekniska Högskola
+                Chalmers Tekniska Högskola
               </h2>
             </hgroup>
           </a>
-
           <nav>
           </nav>
         </section>
         <section class="large-4 columns">
           <div class="footer-contact">
             <div class="row">
-              <div class="column small-6 large-8 text-right"><dt>Kontakt</dt></div>
-              <div class="column small-6 large-4"><dd><a href="mailto:styret@dtek.se">styret@dtek.se</a></dd></div>
+              <div class="column small-6 large-8 text-right">
+                <dt>Kontakt</dt>
+              </div>
+              <div class="column small-6 large-4">
+                <dd><a href="mailto:styret@dtek.se">styret@dtek.se</a></dd>
+              </div>
             </div>
-
             <div class="row">
-              <div class="column small-6 large-8 text-right"><dt>Postadress</dt></div>
+              <div class="column small-6 large-8 text-right">
+                <dt>Postadress</dt>
+              </div>
               <div class="column small-6 large-4">
                 <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                   <span itemprop="name">Datateknologsektionen</span><br />
@@ -206,189 +218,190 @@
               </div>
             </div>
         </section>
-       <!-- <section class="large-4 columns">
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Styrelse</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/styrit.html">styrIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Studienämnd</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/snit.html">snIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Sexmästeri</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/sexit.html">sexIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>PR &amp; Rustmästeri</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/prit.html">P.R.I.T.</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Mottagningskommitté</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/nollkit.html">NollKIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Corporate Relations Committee</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/armit.html">ArmIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Digitala system</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/digit.html">digIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Fanbärare</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/fanbarerit.html">FanbärerIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Fysiska aktiviteter</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/fritid.html">frITid</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Digitala spel</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/8bit.html">8-bIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Analoga spel</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/drawit.html">DrawIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Film och fotografi</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/flashit.html">FlashIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Häfv och odygd</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/hookit.html">HookIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Sektionens revisorer</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/revisorer.html">Revisorer</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Valberedning</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/valberedningen.html">Valberedningen</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>LAN och E-Sport</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/laggit.html">LaggIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Fikaförening</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/fikit.html">FikIT</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>MrcIT</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/mrcit.html">Masters Reception Commitee</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>Alumnimiddagsansvariga</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="committees/ama.html">Alumnimiddagsansvariga</a></dd>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column small-6 large-8 text-right">
-                    <dt>legacy</dt>
-                  </div>
-                  <div class="column small-6 large-4">
-                    <dd><a href="https://chalmers.it/committees/legacy">legacy</a></dd>
-                  </div>
-                </div>
-        </section> -->
-      </div>
+        <!-- <section class="large-4 columns">
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Styrelse</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/styrit.html">styrIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Studienämnd</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/snit.html">snIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Sexmästeri</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/sexit.html">sexIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>PR &amp; Rustmästeri</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/prit.html">P.R.I.T.</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Mottagningskommitté</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/nollkit.html">NollKIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Corporate Relations Committee</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/armit.html">ArmIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Digitala system</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/digit.html">digIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Fanbärare</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/fanbarerit.html">FanbärerIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Fysiska aktiviteter</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/fritid.html">frITid</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Digitala spel</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/8bit.html">8-bIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Analoga spel</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/drawit.html">DrawIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Film och fotografi</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/flashit.html">FlashIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Häfv och odygd</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/hookit.html">HookIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Sektionens revisorer</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/revisorer.html">Revisorer</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Valberedning</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/valberedningen.html">Valberedningen</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>LAN och E-Sport</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/laggit.html">LaggIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Fikaförening</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/fikit.html">FikIT</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>MrcIT</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/mrcit.html">Masters Reception Commitee</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>Alumnimiddagsansvariga</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="committees/ama.html">Alumnimiddagsansvariga</a></dd>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column small-6 large-8 text-right">
+              <dt>legacy</dt>
+            </div>
+            <div class="column small-6 large-4">
+              <dd><a href="https://chalmers.it/committees/legacy">legacy</a></dd>
+            </div>
+          </div>
+          </section> -->
+        </div>
       </div>
     </footer>
     <div class="footer-foot">
-        <div class="wrapper">
+      <div class="wrapper">
         <p><small>Utvecklad av <a href="https://digit.chalmers.it" title="digIT"> digIT</a>, stulen av <a href="mailto:viktor@dtek.se">Viktor</a>  <span class="footer-foot-divider">|</span>  <a href="humans.txt">mer info</a>
           <span class="footer-foot-divider">|</span> <a href="LICENSE.txt">licens</a>
           <span class="footer-foot-divider">|</span> de flesta foton tillhör <a href="https://dfoto.se">DFoto</a>
-        </small></p>
-          </div>
+          </small>
+        </p>
       </div>
+    </div>
     </div>
     <script src="assets/application-388d36f13e5c9f9c542119eb3ced01ea50e9374dfb9ee5a30ebf2160afd56f71.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       /*Set header to something random */
-  function setBanner() {
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "images/banners/banners.txt", false);
-    rawFile.onreadystatechange = function ()
-    {
+      function setBanner() {
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", "images/banners/banners.txt", false);
+      rawFile.onreadystatechange = function ()
+      {
         if(rawFile.readyState === 4)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
@@ -401,21 +414,20 @@
                 console.log("Background " + number + ": " + background);
             }
         }
-    }
-    rawFile.send(null);
-    setTimeout(function(){ $('#banner').fadeOut(1000, setBanner);}, 10000);
-  }
-  setBanner();
-  </script>
-  <style type="text/css">
-  #banner {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 20%;
-  }
-  </style>
+      }
+      rawFile.send(null);
+      setTimeout(function(){ $('#banner').fadeOut(1000, setBanner);}, 10000);
+      }
+      setBanner();
+    </script>
+    <style type="text/css">
+      #banner {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-position-x: 20%;
+      background-position-y: 20%;
+      }
+    </style>
   </body>
 </html>
-

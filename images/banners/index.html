@@ -23,7 +23,7 @@
                 var mydiv = document.getElementById("main");
                 for(var i = 0; i < allText.length; i++) {
                   str = allText[i] + ":<br/><img src=\"" + allText[i] + "\"><br/>"
-                  mydiv.appendChild(document.createTextNode(str));
+                  mydiv.appendChild(str);
                   console.log("Background " + i + ": " + allText[i]);
                 }
             }

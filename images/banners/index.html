@@ -3,11 +3,7 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8" />
-
     <title>Banners | DTEK-portalen</title>
-  
-    <link rel="stylesheet" media="screen" href="assets/application-e5fdf175421bd982cd8b3817f2bc93d589c6632296666e2bd520032754a15875.css" />
-
   </head>
   <body class="home home-index">
     <div id="main">
@@ -16,7 +12,7 @@
     de flesta foton tillhör <a href="https://dfoto.se">DFoto</a>
     <script>
       var rawFile = new XMLHttpRequest();
-      rawFile.open("GET", "images/banners/banners.txt", false);
+      rawFile.open("GET", "banners.txt", false);
       rawFile.onreadystatechange = function ()
       {
         if(rawFile.readyState === 4)
@@ -26,7 +22,7 @@
                 var allText = rawFile.responseText.split("\n");
                 var mydiv = document.getElementById("main");
                 for(var i = 0; i < allText.length; i++) {
-                  str = allText[i] + ":<br/><img src=\"images/banners/" + allText[i] + "\"><br/>"
+                  str = allText[i] + ":<br/><img src=\"" + allText[i] + "\"><br/>"
                   mydiv.appendChild(document.createTextNode(str));
                   console.log("Background " + i + ": " + allText[i]);
                 }

@@ -16,5 +16,4 @@ nollan.jpeg
 nollfinalen.jpeg
 ovvebad.jpeg
 preview.jpeg
-sittningsmat.jpeg
 coding.jpg

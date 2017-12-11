@@ -7714,7 +7714,7 @@ i.loading-indicator-feature {
 }
 .home .quick-buttons .box,
 .home .user-area .box {
-    height: 10em;
+    height: auto;
     overflow: hidden;
     margin-top: -1em;
     margin-bottom: 1em;
@@ -7739,6 +7739,7 @@ i.loading-indicator-feature {
     width: 15.5%;
     padding-top: 5px;
     font-size: .9em
+    margin-top: 1em;
 }
 @media screen and (max-width: 40em) {
     .home .quick-buttons li {

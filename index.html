@@ -40,6 +40,7 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
     <header role="banner" id="banner">
+      <div id="banner-pix"> </div>
       <div class="top-bar">
         <div class="inner-bar" id="site-menu">
           <div class="wrapper group">
@@ -373,25 +374,27 @@
                 var allText = rawFile.responseText.split("\n");
                 var number = Math.floor(Math.random() * allText.length);
                 var background = allText[number];
-                $('#banner').css('background-image', "url('images/banners/" + background + "')");
-                $('#banner').fadeIn(1000);
+                $('#banner-pix').css('background-image', "url('images/banners/" + background + "')");
+                $('#banner-pix').fadeIn(1000);
                 console.log("Background " + number + ": " + background);
             }
         }
       }
       rawFile.send(null);
-      setTimeout(function(){ $('#banner').fadeOut(1000, setBanner);}, 10000);
+      setTimeout(function(){ $('#banner-pix').fadeOut(1000, setBanner);}, 10000);
       }
       setBanner();
     </script>
     <style type="text/css">
-      #banner {
+      #banner-pix {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
       background-position-x: 20%;
       background-position-y: 20%;
       background-color: #666;
+      width: 100%;
+      height:100%;
       }
     </style>
   </body>

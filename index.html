@@ -24,6 +24,7 @@
       //]]>
     </script>    
     <link rel="stylesheet" media="screen" href="assets/application-e5fdf175421bd982cd8b3817f2bc93d589c6632296666e2bd520032754a15875.css" />
+    <link rel="stylesheet" href="assets/blockrain/blockrain.css" />
     <script src="assets/vendor/modernizr-4acdf69dfb61855f7bf52c0e8df714b19a8d07185726649e16d0669659008db5.js" async></script>
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="uazsihfxLLeM8/1bi0LQAfbPdVzrzqEai06bcBoX+N7n7eLJZdn3NSF8o+lwotbMVzvA4R+TF4U7wwlD+UGnbA==" />
@@ -189,6 +190,9 @@
               <h2>Arrangemangskalender</h2>
             </header>
             <iframe src="https://calendar.google.com/calendar/embed?title=%20&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=1kkm5l6hn0qhh7c7b6mnablnk0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FStockholm" style="border-width:0; width: 100%; height: 20em" height="300" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="box">
+              <div class="blockrain" style="width:100%;height:100%"></div>
           </div>
         </div>
       </section>
@@ -408,5 +412,9 @@
       height:100%;
       }
     </style>
+    <script src="assets/blockrain/blockrain.jquery.min.js"></script>
+    <script>
+        $('.blockrain').blockrain();
+    </script>
   </body>
 </html>

@@ -378,25 +378,27 @@
     <script>
       /*Set header to something random */
       function setBanner() {
-      var rawFile = new XMLHttpRequest();
-      rawFile.open("GET", "images/banners/banners.txt", false);
-      rawFile.onreadystatechange = function ()
-      {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText.split("\n");
-                var number = Math.floor(Math.random() * allText.length);
-                var background = allText[number];
-                $('#banner-pix').css('background-image', "url('images/banners/" + background + "')");
-                $('#banner-pix').fadeIn(1000);
-                console.log("Background " + number + ": " + background);
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", "images/banners/banners.txt", true);
+        rawFile.onload = function (e) {
+          if(rawFile.readyState === 4) {
+            if(rawFile.status === 200 || rawFile.status == 0) {
+              var allText = rawFile.responseText.split("\n");
+              var number = Math.floor(Math.random() * allText.length);
+              var background = allText[number];
+              $('#banner-pix').css('background-image', "url('images/banners/" + background + "')");
+              $('#banner-pix').fadeIn(1000);
+              console.log("Background " + number + ": " + background);
+            } else {
+              console.error(rawFile.statusText);
             }
+          }
         }
-      }
-      rawFile.send(null);
-      setTimeout(function(){ $('#banner-pix').fadeOut(1000, setBanner);}, 10000);
+        rawFile.onerror = function (e) {
+          console.error(rawFile.statusText);
+        }
+        rawFile.send(null);
+        setTimeout(function(){ $('#banner-pix').fadeOut(1000, setBanner);}, 10000);
       }
       setBanner();
 

@@ -423,7 +423,8 @@
     <script>
         $('.blockrain').blockrain({ blockWidth: 14 });
         if(is_touch_device()) {
-          $('.blockrain').blockrain('controls',true);
+          $('.blockrain').blockrain('autoplay',true);
+          $('.blockrain').blockrain('autoplayRestart',true);
         }
     </script>
   </body>

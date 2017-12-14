@@ -274,7 +274,7 @@
           </div>
           <div class="row">
             <div class="column small-6 large-8 text-right">
-              <dt>PR-förening</dt>
+              <dt>PR-kommitté</dt>
             </div>
             <div class="column small-6 large-4">
               <dd><a href="//dtek.se/wiki/Main/Delta">Delta</a></dd>
@@ -306,7 +306,7 @@
           </div>
           <div class="row">
             <div class="column small-6 large-8 text-right">
-              <dt>IT-drift</dt>
+              <dt>IT-driftsförening</dt>
             </div>
             <div class="column small-6 large-4">
               <dd><a href="//dtek.se/wiki/Main/DHack">dHack</a></dd>
@@ -399,6 +399,11 @@
       setTimeout(function(){ $('#banner-pix').fadeOut(1000, setBanner);}, 10000);
       }
       setBanner();
+
+
+      function is_touch_device() {
+        return 'ontouchstart' in window;
+      }
     </script>
     <style type="text/css">
       #banner-pix {
@@ -415,6 +420,9 @@
     <script src="assets/blockrain/blockrain.jquery.min.js"></script>
     <script>
         $('.blockrain').blockrain({ blockWidth: 14 });
+        if(is_touch_device()) {
+          $('blockrain').blockrain('controls',true);
+        }
     </script>
   </body>
 </html>

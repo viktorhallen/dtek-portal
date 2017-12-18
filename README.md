@@ -1,5 +1,5 @@
 # Deprecated
-Development of this project has moved to github.com/dtekcth/dtek-portal
+Development of this project has moved to [github.com/dtekcth/dtek-portal]
 
 
 # dtek-portal
